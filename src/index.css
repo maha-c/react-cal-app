@@ -1,13 +1,98 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin:0px;
+    padding:0px;
+    border-radius: 0px;
+    box-sizing: border-box;
+    font-size: 110%;
 }
+  
+#root{
+    text-align:left;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
+.calculator-title{
+    font-size:30px;
+    background: #fff;
+    width: 400px;
+    padding: 10px 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    border: 2px solid black;
+    color: #4CAF50;
+}
+.mainCalc{
+    margin:0px;
+    padding:0px;
+    border-radius: 0px;
+    box-sizing: border-box;
+}
+.btn {
+    border: 2px;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  /* Green */
+  .numbers {
+    color: green;
+  }
+  
+  .numbers:hover {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* End of Numbers  */
+  /* Green */
+  .button {
+    color: green;
+  }
+  
+  .success:hover {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Blue */
+  .info {
+    color: dodgerblue;
+  }
+  
+  .info:hover {
+    background: #2196F3;
+    color: white;
+  }
+  
+  /* Orange */
+  .warning {
+    color: orange;
+  }
+  
+  .warning:hover {
+    background: #ff9800;
+    color: white;
+  }
+  
+  /* Red */
+  .danger {
+    color: red;
+  }
+  
+  .button:hover {
+    background: #f44336;
+    color: white;
+  }
+  
+  /* Gray */
+  .default {
+    color: black;
+  }
+  
+  .default:hover {
+    background: #e7e7e7;
+  }
