@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/react-cal-app/static/js/main.68655f76.js",
+    "static/media/image.gif": "/react-cal-app/static/media/image.b0391c4ecc3e8f89979f.gif",
+    "index.html": "/react-cal-app/index.html",
+    "main.68655f76.js.map": "/react-cal-app/static/js/main.68655f76.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.68655f76.js"
+  ]
+}
