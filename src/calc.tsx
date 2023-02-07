@@ -29,7 +29,7 @@ export function Calculator()  {
 
         switch (true){
             
-        case (!isNaN(parseInt(button.name)) && currentNumber==="0"):
+        case (!isNaN(parseFloat(button.name)) && currentNumber==="0"):
             setcurrentNumber(button.name);
             break;
         
@@ -44,20 +44,20 @@ export function Calculator()  {
         //     break;
         
 
-        case (!isNaN(parseInt(button.name)) && parseInt(currentNumber)>0):                   
+        case (!isNaN(parseFloat(button.name)) && parseFloat(currentNumber)>0):                   
             setcurrentNumber(currentNumber + button.name);
             break;
 
         case button.name.includes('/'):     
                        
-              setfirstnum(parseInt(currentNumber))
+              setfirstnum(parseFloat(currentNumber))
               setoperator("/")
               setcurrentNumber("0");
               break; 
 
         case button.name.includes('*'):{
                    
-            setfirstnum(parseInt(currentNumber))
+            setfirstnum(parseFloat(currentNumber))
             setoperator("*")
             setcurrentNumber("0");
             break;
@@ -65,14 +65,14 @@ export function Calculator()  {
 
         case button.name.includes('+'):     
                   
-          setfirstnum(parseInt(currentNumber))
+          setfirstnum(parseFloat(currentNumber))
           setoperator("+")          
           setcurrentNumber("0");
           break; 
 
         case button.name.includes('-'):{
             
-            setfirstnum(parseInt(currentNumber))
+            setfirstnum(parseFloat(currentNumber))
             setoperator("-")
             setcurrentNumber("0");
             break;
@@ -88,10 +88,10 @@ export function Calculator()  {
         switch (operator){
 
             case "+":
-                output = firstnum + parseInt(currentNumber)     
+                output = firstnum + parseFloat(currentNumber)     
                 setcurrentNumber(output.toString())
-                sethistory("Addition  Performed --> " + firstnum + " + " + parseInt(currentNumber) + " = " + output)
-                writehistory("Addition Performed --> " + firstnum + " + " + parseInt(currentNumber) + " = " + output)
+                sethistory("Addition  Performed --> " + firstnum + " + " + parseFloat(currentNumber) + " = " + output)
+                writehistory("Addition Performed --> " + firstnum + " + " + parseFloat(currentNumber) + " = " + output)
                 setoperator("");
                 
                 break;
@@ -99,8 +99,8 @@ export function Calculator()  {
             case "-":
                 output = firstnum -  parseInt(currentNumber)     
                 setcurrentNumber(output.toString())
-                sethistory("Addition Performed --> " + firstnum + " - " + parseInt(currentNumber) + " = " + output)
-                writehistory("Subtraction Performed --> " + firstnum + " - " + parseInt(currentNumber) + " = " + output)
+                sethistory("Addition Performed --> " + firstnum + " - " + parseFloat(currentNumber) + " = " + output)
+                writehistory("Subtraction Performed --> " + firstnum + " - " + parseFloat(currentNumber) + " = " + output)
                 setoperator("");
                 
                 break;
@@ -108,8 +108,8 @@ export function Calculator()  {
             case "*":
                 output = firstnum * parseInt(currentNumber)     
                 setcurrentNumber(output.toString())
-                sethistory("Multiplication Performed --> " + firstnum + " * " + parseInt(currentNumber) + " = " + output)
-                writehistory("Multiplication  Performed --> " + firstnum + " * " + parseInt(currentNumber) + " = " + output)
+                sethistory("Multiplication Performed --> " + firstnum + " * " + parseFloat(currentNumber) + " = " + output)
+                writehistory("Multiplication  Performed --> " + firstnum + " * " + parseFloat(currentNumber) + " = " + output)
                 setoperator("");
                 
                 break;
@@ -117,8 +117,8 @@ export function Calculator()  {
             case "/":
                 output = firstnum / parseInt(currentNumber)     
                 setcurrentNumber(output.toString())
-                sethistory("Division  Performed --> " + firstnum + " / " + parseInt(currentNumber) + " = " + output)
-                writehistory("Division  Performed --> " + firstnum + " / " + parseInt(currentNumber) + " = " + output)
+                sethistory("Division  Performed --> " + firstnum + " / " + parseFloat(currentNumber) + " = " + output)
+                writehistory("Division  Performed --> " + firstnum + " / " + parseFloat(currentNumber) + " = " + output)
                 setoperator("");
                 
                 break;
